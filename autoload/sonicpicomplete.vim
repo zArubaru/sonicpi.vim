@@ -132,23 +132,31 @@ class SonicPiWordlist
     # New with 2.4
     @directives += %w(spread)
 # Synths from server/sonicpi/lib/sonicpi/synthinfo.rb
+# TODO: contexts
     @synths = []
-    @synths += %w(:dull_bell :pretty_bell :beep :sine :saw :pulse)
-    @synths += %w(:square :tri :dsaw :fm :mod_fm :mod_saw :mod_dsaw)
-    @synths += %w(:mod_sine :mod_beep :mod_tri :mod_pulse :tb303)
-    @synths += %w(:supersaw :prophet :zawa :dark_ambience :growl)
-    @synths += %w(:hollow :noise :pnoise)
-    @synths += %w(:bnoise :gnoise :cnoise)
+    @synths += %w(:dull_bell :pretty_bell :beep :sine :saw :pulse :subpulse)
+    @synths += %w(:square :tri :dsaw :dpulse :dtri :fm)
+    @synths += %w(:mod_fm :mod_saw :mod_dsaw :mod_sine :mod_beep :mod_tri :mod_pulse)
+    @synths += %w(:chiplead :chipbass :tb303 :supersaw :hoover :prophet :zawa)
+    @synths += %w(:dark_ambience :growl :hollow :blade :piano :pluck :tech_saws)
+    @synths += %w(:sound_in :sound_in_stereo)
+    @synths += %w(:noise :pnoise :bnoise :gnoise :cnoise :chipnoise)
     # dark_sea_horn and wood have been removed in 2.4 - come back soon!
     #@synths += %w(:dark_sea_horn :wood)
 # FX from server/sonicpi/lib/sonicpi/synthinfo.rb
+# TODO: contexts, group these better
     @fx = []
-    @fx += %w(:bitcrusher :reverb)
-    @fx += %w(:level :echo :slicer :wobble :ixi_techno)
-    @fx += %w(:compressor :rlpf :nrlpf :rhpf :nrhpf)
-    @fx += %w(:hpf :nhpf :lpf :nlpf :normaliser)
-    @fx += %w(:distortion :pan :bpf :nbpf :rbpf)
-    @fx += %w(:nrbpf :ring :flanger)
+    @fx += %w(
+      :bitcrusher :krush :reverb :gverb :replace_reverb :level :mono
+      :autotuner :replace_level :echo :replace_echo :slicer :panslicer
+      :replace_slicer :wobble :replace_wobble :ixi_techno :replace_ixi_techno
+      :compressor :whammy :replace_compressor :rlpf :replace_rlpf :nrlpf
+      :replace_nrlpf :rhpf :replace_rhpf :nrhpf :replace_nrhpf :hpf :replace_hpf
+      :nhpf :replace_nhpf :lpf :replace_lpf :nlpf :replace_nlpf :normaliser
+      :replace_normaliser :distortion :replace_distortion :pan :replace_pan :bpf
+      :nbpf :rbpf :nrbpf :band_eq :tanh :pitch_shift :ring_mod :octaver :vowel
+      :flanger :eq :tremolo :record :sound_out :sound_out_stereo :ping_pong
+    )
 # Samples from server/sonicpi/lib/sonicpi/synthinfo.rb
     @samples = []
     @samples += %w(
