@@ -151,30 +151,74 @@ class SonicPiWordlist
     @fx += %w(:nrbpf :ring :flanger)
 # Samples from server/sonicpi/lib/sonicpi/synthinfo.rb
     @samples = []
-    @samples += %w(:drum_heavy_kick :drum_tom_mid_soft :drum_tom_mid_hard)
-    @samples += %w(:drum_tom_lo_soft :drum_tom_lo_hard :drum_tom_hi_soft)
-    @samples += %w(:drum_tom_hi_hard :drum_splash_soft :drum_splash_hard)
-    @samples += %w(:drum_snare_soft :drum_snare_hard :drum_cymbal_soft)
-    @samples += %w(:drum_cymbal_hard :drum_cymbal_open :drum_cymbal_closed)
-    @samples += %w(:drum_cymbal_pedal :drum_bass_soft :drum_bass_hard)
-    @samples += %w(:elec_triangle :elec_snare :elec_lo_snare :elec_hi_snare)
-    @samples += %w(:elec_mid_snare :elec_cymbal :elec_soft_kick)
-    @samples += %w(:elec_filt_snare :elec_fuzz_tom :elec_chime :elec_bong)
-    @samples += %w(:elec_twang :elec_wood :elec_pop :elec_beep :elec_blip)
-    @samples += %w(:elec_blip2 :elec_ping :elec_bell :elec_flip :elec_tick)
-    @samples += %w(:elec_hollow_kick :elec_twip :elec_plip :elec_blup)
-    @samples += %w(:guit_harmonics :guit_e_fifths :guit_e_slide :guit_em9)
-    @samples += %w(:misc_burp :perc_bell :perc_snap :perc_snap2)
-    @samples += %w(:ambi_soft_buzz :ambi_swoosh :ambi_drone :ambi_glass_hum)
-    @samples += %w(:ambi_glass_rub :ambi_haunted_hum :ambi_piano)
-    @samples += %w(:ambi_lunar_land :ambi_dark_woosh :ambi_choir)
-    @samples += %w(:bass_hit_c :bass_hard_c :bass_thick_c :bass_drop_c)
-    @samples += %w(:bass_woodsy_c :bass_voxy_c :bass_voxy_hit_c :bass_dnb_f)
-    @samples += %w(:sn_dub :sn_dolf :sn_zome :bd_ada :bd_pure :bd_808)
-    @samples += %w(:bd_zum :bd_gas :bd_sone :bd_haus :bd_zome :bd_boom)
-    @samples += %w(:bd_klub :bd_fat :bd_tek :loop_industrial :loop_compus)
-    @samples += %w(:loop_amen :loop_amen_full :loop_garzul)
-    @samples += %w(:loop_mik)
+    @samples += %w(
+      :drum_heavy_kick :drum_tom_mid_soft :drum_tom_mid_hard
+      :drum_tom_lo_soft :drum_tom_lo_hard :drum_tom_hi_soft
+      :drum_tom_hi_hard :drum_splash_soft :drum_splash_hard
+      :drum_snare_soft :drum_snare_hard :drum_cymbal_soft
+      :drum_cymbal_hard :drum_cymbal_open :drum_cymbal_closed
+      :drum_cymbal_pedal :drum_bass_soft :drum_bass_hard
+      :drum_cowbell :drum_roll
+    )
+    @samples += %w(
+      :elec_triangle :elec_snare :elec_lo_snare :elec_hi_snare
+      :elec_mid_snare :elec_cymbal :elec_soft_kick :elec_filt_snare
+      :elec_fuzz_tom :elec_chime :elec_bong :elec_twang :elec_wood
+      :elec_pop :elec_beep :elec_blip :elec_blip2 :elec_ping :elec_bell
+      :elec_flip :elec_tick :elec_hollow_kick :elec_twip :elec_plip
+      :elec_blup
+    )
+    @samples += %w(
+      :guit_harmonics :guit_e_fifths :guit_e_slide :guit_em9
+    )
+    @samples += %w(
+      :misc_burp :misc_crow :misc_cineboom
+    )
+    @samples += %w(
+      :perc_bell :perc_bell2 :perc_snap :perc_snap2 :perc_swash :perc_till
+      :perc_door :perc_impact1 :perc_impact2 :perc_swoosh
+    )
+    @samples += %w(
+      :ambi_soft_buzz :ambi_swoosh :ambi_drone :ambi_glass_hum
+      :ambi_glass_rub :ambi_haunted_hum :ambi_piano :ambi_lunar_land
+      :ambi_dark_woosh :ambi_choir :ambi_sauna
+    )
+    @samples += %w(
+      :bass_hit_c :bass_hard_c :bass_thick_c :bass_drop_c :bass_woodsy_c
+      :bass_voxy_c :bass_voxy_hit_c :bass_dnb_f
+    )
+    @samples += %w(
+      :sn_dub :sn_dolf :sn_zome :sn_generic
+    )
+    @samples += %w(
+      :bd_ada :bd_pure :bd_808 :bd_zum :bd_gas :bd_sone :bd_haus :bd_zome
+      :bd_boom :bd_klub :bd_fat :bd_tek :bd_mehackit
+    )
+    @samples += %w(
+      :loop_industrial :loop_compus :loop_amen :loop_amen_full :loop_garzul
+      :loop_mika :loop_breakbeat :loop_safari :loop_tabla :loop_3d_printer
+      :loop_drone_g_97 :loop_electric :loop_mehackit1 :loop_mehackit2
+      :loop_perc1 :loop_perc2 :loop_weirdo
+    )
+    @samples += %w(
+      :tabla_tas1 :tabla_tas2 :tabla_tas3 :tabla_ke1 :tabla_ke2 :tabla_ke3
+      :tabla_na :tabla_na_o :tabla_tun1 :tabla_tun2 :tabla_tun3 :tabla_te1
+      :tabla_te2 :tabla_te_ne :tabla_te_m :tabla_ghe1 :tabla_ghe2 :tabla_ghe3
+      :tabla_ghe4 :tabla_ghe5 :tabla_ghe6 :tabla_ghe7 :tabla_ghe8 :tabla_dhec
+      :tabla_na_s :tabla_re
+    )
+    @samples += %w(
+      :glitch_bass_g :glitch_perc1 :glitch_perc2 :glitch_perc3 :glitch_perc4
+      :glitch_perc5 :glitch_robot1 :glitch_robot2
+    )
+    @samples += %w(
+      :vinyl_backspin :vinyl_rewind :vinyl_scratch :vinyl_hiss
+    )
+    @samples += %w(
+      :mehackit_phone1 :mehackit_phone2 :mehackit_phone3 :mehackit_phone4
+      :mehackit_robot1 :mehackit_robot2 :mehackit_robot3 :mehackit_robot4
+      :mehackit_robot5 :mehackit_robot6 :mehackit_robot7
+    )
 
 # Contexts in which we may want particular completions
     @context = {}
@@ -201,7 +245,7 @@ class SonicPiWordlist
       'mix', 'mix_slide', 'mix_slide_curve', 'mix_slide_shape'
     ]
     @context['base_modulated'] = [
-      'mod_invert_wave', 
+      'mod_invert_wave',
       'mod_phase', 'mod_phase_offset', 'mod_phase_slide', 'mod_phase_slide_curve', 'mod_phase_slide_shape',
       'mod_pulse_width', 'mod_pulse_width_slide', 'mod_pulse_width_slide_curve', 'mod_pulse_width_slide_shape',
       'mod_range', 'mod_range_slide', 'mod_range_slide_curve', 'mod_range_slide_shape',
@@ -299,7 +343,7 @@ class SonicPiWordlist
       'amp_max', 'amp_max_slide', 'amp_max_slide_curve', 'amp_max_slide_shape'
     ]
 
-    @context['ixi_techno'] = @context['level'] + @context['base_mix'] + 
+    @context['ixi_techno'] = @context['level'] + @context['base_mix'] +
         @context['base_phase'] + @context['base_res'] + [
           'cutoff_min', 'cutoff_min_slide', 'cutoff_min_slide_curve', 'cutoff_min_slide_shape',
           'cutoff_max', 'cutoff_max_slide', 'cutoff_max_slide_curve', 'cutoff_max_slide_shape'
